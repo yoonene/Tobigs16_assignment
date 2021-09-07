@@ -42,3 +42,25 @@
 * 네트워크로 그냥 넘겨주지 않고 Concatenate 후 네트워크로 입력
 ## Fusion of GMP and MLP
 ![alt limitation_MF](https://media.vlpt.us/images/kimkj38/post/e29264db-3ffd-4064-b2aa-e259cb8c2f42/image.png)
+* GMF와 MLP를 각각 수행 후 concatenation으로 합친 모델
+* 선형적 특성(GMF)와 비선형적 특성(MLP)를 합쳐 복잡한 관계를 표현할 수 있음.
+* 두 모델을 각각 최적화하기 때문에 서로 다른 사이즈의 임베딩을 가짐.
+<br>
+
+# Experiments
+* Outperform state-of-the-art를 달성하였는가? (RQ1)
+* Log loss와 Negative Sampling의 효과 (RQ2)
+* Layer가 깊어질수록 user-item interaction 학습에 효과적인가? (RQ3)
+## RQ1
+![alt limitation_MF](https://media.vlpt.us/images/kimkj38/post/64c0dcea-c064-48cc-9cc0-a9338ce57637/image.png)
+<br>모델별 성능 평가 결과 NeuMF 모델이 모든 경우에서 가장 성능이 높은 것을 확인.
+## RQ2
+![alt limitation_MF](https://media.vlpt.us/images/kimkj38/post/b0e506d9-3800-4a1b-aa06-3b08fc41dd91/image.png)
+* More iteration -> NeuMF 모델의 training loss는 감소하지만 성능은 내려감. (overfitting)
+* NeuMF의 성능이 가장 좋음.
+* 3~6개의 negative sampling ratio일 때 더 효과적.
+## RQ3
+![alt limitation_MF](https://media.vlpt.us/images/kimkj38/post/b0e506d9-3800-4a1b-aa06-3b08fc41dd91/image.png)
+<br>layer가 깊어질수록 더 성능이 좋아짐.
+
+
