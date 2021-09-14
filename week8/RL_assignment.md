@@ -52,7 +52,7 @@
 * 각 게임의 score 단위가 달라 positive reward: 1, negative reward: -1, 변화 없음: 0 으로 설정.
 * Optimizer: RMSProp, mini-batch: 32
 * 1000만 프레임을 학습. replay memory에는 100만 프레임만 사용.
-### Training amd Stability
+### Training ad Stability
 * RL은 evaluation metrics를 정하기 어려움. 
 * evaluation metrics: 
  1) average award
