@@ -17,6 +17,4 @@
 * 변형된 Q-Learning 알고리즘과 Stochastic gradient descent를 사용하여 훈련.
 * 데이터끼리 연관되어있는 문제를 해결하기 위해 experience replay mechanism을 사용. -> 이전 행동에 대한 학습 분포(training data distribution)를 완화.
 
-<br>
 
-# Background
