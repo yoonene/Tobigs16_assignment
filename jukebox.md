@@ -7,7 +7,7 @@
 ### Encoding, Embedding
 * Top-level : 필수 음악 정보만 보존 (128x로 압축) <br>
   Middel-level (32x로 압축) <br>
-  Bottom-level (8x로 압축)
+  Bottom-level : 최고품질 음질 (8x로 압축)
 * 이 3가지 level에 대해 각자 인코딩, 디코딩
 * CNN을 통해 Encoding -> VQ-VAE를 통해 양자화 임베딩하여 오디오 압축
 ### 음악 생성
