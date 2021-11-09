@@ -1,6 +1,9 @@
 # OpenAI Jukebox
 ## 모델 구조
 * AutoEncoder 구조
+
+<img src="https://user-images.githubusercontent.com/56261032/140885344-e62c78e4-06db-419d-b5f2-7a19eefba61e.png" width="500" height="200">
+
 ### Encoding, Embedding
 * Top-level : 필수 음악 정보만 보존 (128x로 압축) <br>
   Middel-level (32x로 압축) <br>
